@@ -1,4 +1,5 @@
 package com.example.librariesex.model;
+
 import java.util.UUID;
 import jakarta.persistence.*;
 import java.util.List;
@@ -14,6 +15,7 @@ public class Book {
     private List<String> authors;
     private int pages;
     private String isbn;
+    @Column(name = "\"year\"")
     private int year;
     private String publisher;
     private String genre;
